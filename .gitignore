@@ -12,6 +12,11 @@
 # /sites/*/private
 # /sites/*/files-public
 # /sites/*/files-private
+/sites/default/files/js/*
+/sites/default/files/css/*
+/sites/default/files/styles/*
+/sites/default/files/php/*
+/themes/gavias_kama/css/template.min.css
 
 # Ignore paths that may contain temporary files
 # /sites/*/translations

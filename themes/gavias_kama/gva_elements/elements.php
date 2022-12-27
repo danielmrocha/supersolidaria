@@ -2,7 +2,7 @@
 function gavias_blockbuilder_get_elements(){
    return $shortcodes = array(
     'gsc_accordion',
-    'gsc_box_hover', 
+    'gsc_box_hover',
     //'gsc_box_info',
     'gsc_box_text',
     'gsc_call_to_action',
@@ -43,13 +43,14 @@ function gavias_blockbuilder_get_elements(){
     'gsc_our_menu',
     'gsc_view_tabs',
     'gsc_view_tabs_ajax',
+    'ssc_services_carousel', // added for supersolidaria
   );
 }
 
 function scrape_insta_hash($tag) {
    $insta_source = file_get_contents('https://www.instagram.com/'.trim($tag)); // instagrame tag url
    $shards = explode('window._sharedData = ', $insta_source);
-   $insta_json = explode(';</script>', $shards[1]); 
+   $insta_json = explode(';</script>', $shards[1]);
    $insta_array = json_decode($insta_json[0], TRUE);
    return $insta_array; // this return a lot things print it and see what else you need
 }

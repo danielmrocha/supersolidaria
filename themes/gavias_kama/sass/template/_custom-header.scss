@@ -1,0 +1,43 @@
+header.header-v1 .main-menu .area-inner {
+    background-color: $mainGray;
+}
+header.header-v1 .main-menu .area-inner ul.gva_menu > li.menu-item--active-trail, .menu-hover .navigation .gva_menu > li > a:hover {
+    background-color: $gcMainBlue;
+    color: white !important;
+}
+.menu-hover .navigation .gva_menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.topbar {
+    background-color: $gcMainBlue;
+}
+.topbar a {
+    color: white;
+}
+.menu-hover .navigation .gva_menu .sub-menu {
+    border-top-color: $gcMainBlue;
+    border-top-width: 2px;
+    padding: 0;
+}
+.menu-hover .navigation .gva_menu .sub-menu > li > a:hover, .menu-hover .navigation .gva_menu .sub-menu > li > a:focus, .menu-hover .navigation .gva_menu .sub-menu > li > a:active {
+    color: initial;
+    background-color: #e8e8e8;
+}
+.menu-hover .navigation .gva_menu .sub-menu > li > a, header .menu-another .content-inner ul li a {
+    padding: 7px 10px !important;
+}
+.menu-hover .navigation .gva_menu .sub-menu > li {
+    padding: 0;
+    margin: 0;
+}
+header .menu-another .content-inner {
+    padding: 0;
+    border-color: $gcMainBlue;
+}
+header .menu-another .content-inner:after {
+    border-bottom-color: $gcMainBlue;
+}
+.menu-hover .navigation .gva_menu li.menu-item--active-trail > a {
+    color: $gcMainBlue !important;
+}

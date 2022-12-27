@@ -1,0 +1,126 @@
+.post-hero-center {
+    .owl-carousel {
+        .owl-nav {
+            >div {
+                margin-top: -40px;
+            }
+        }
+    }
+
+    [class^="gv-icon"],
+    [class*=" gv-icon"] {
+        font-size: 80px !important;
+        color: white;
+    }
+
+    .post-content {
+        height: auto;
+        background-color: #069169;
+        margin-left: 12px;
+    }
+
+    .post-image {
+        padding: 0;
+    }
+
+    @media(min-width: $screen-md) {
+        .field-content>.row {
+            display: flex;
+        }
+    }
+
+    .post-title {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 0 0px 0 60px;
+
+        a {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.gbb-row .bb-inner {
+    padding: 0;
+}
+
+.gsc-service-image-carousel {
+    .item {
+        .content-inner {
+            background-color: #F4F4F4;
+            padding: 15px 0 0 0;
+        }
+
+        img {
+            max-width: 70px;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            background-color: $ssolMainBlue;
+            height: 50px;
+            margin-top: 10px;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .owl-nav.disabled {
+        display: block;
+    }
+
+    [class^="gv-icon"],
+    [class*=" gv-icon"] {
+        color: $ssolMainBlue;
+        font-size: 40px !important;
+    }
+}
+
+.post-hero-center,
+.gsc-service-image-carousel {
+    .owl-carousel {
+        .owl-nav {
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            >div {
+                margin-top: -40px;
+                background-color: transparent !important;
+                box-shadow: none;
+            }
+        }
+    }
+
+    [class^="gv-icon"],
+    [class*=" gv-icon"] {
+        font-family: FontAwesome !important;
+        display: inline-block;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+    }
+
+    .gv-icon-165:before {
+        content: "\f105";
+    }
+
+    .gv-icon-164:before {
+        content: "\f104";
+    }
+}

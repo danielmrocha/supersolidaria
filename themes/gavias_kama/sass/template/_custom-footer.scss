@@ -1,0 +1,44 @@
+.copyright {
+    background-color: $gcMainBlue;
+    img{
+        max-height: 50px;
+    }
+    .copyright-inner{
+        padding: 8px 0;
+        .text-center {
+            border-right: solid 1px white;
+        }
+    }
+}
+.footer-center {
+    background-color: $gcMainGreen;
+    color: #303030;
+    padding: 0 !important;
+    a{
+        color: $gcMainBlue;
+        &:hover{
+            color: $ssolMainGreen;
+        }
+    }
+    >.container {
+        background-color: white;
+        padding: 30px;
+        transform: translateY(-50px);
+        border: solid 1px #ccc;
+        border-radius: 10px;
+    }
+}
+
+.footer-text-header {
+    color: $ssolMainGreen;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#block-footersocialnetwork a {
+    font-weight: bold;
+    font-size: 16px;
+    i {
+        padding-right: 10px;
+    }
+}

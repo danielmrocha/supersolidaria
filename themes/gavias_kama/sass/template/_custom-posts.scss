@@ -83,6 +83,9 @@
 
                         a {
                             font-weight: bold;
+                            &:hover{
+                                color: $ssolLightGreen;
+                            }
                         }
                     }
 

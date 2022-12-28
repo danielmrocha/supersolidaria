@@ -1,43 +1,151 @@
-header.header-v1 .main-menu .area-inner {
-    background-color: $mainGray;
-}
-header.header-v1 .main-menu .area-inner ul.gva_menu > li.menu-item--active-trail, .menu-hover .navigation .gva_menu > li > a:hover {
-    background-color: $gcMainBlue;
-    color: white !important;
-}
-.menu-hover .navigation .gva_menu {
-    display: flex;
-    flex-wrap: wrap;
-}
 .topbar {
     background-color: $gcMainBlue;
+
+    a {
+        color: white;
+    }
+
+    .block-language {
+        .links {
+            li {
+                display: inline-block;
+                padding: 3px 8px;
+
+                a:hover {
+                    text-decoration: underline;
+                    color: $ssolLightGreen;
+                }
+
+                &:not(:last-child) {
+                    border-right: solid 1px white;
+                }
+            }
+        }
+    }
 }
-.topbar a {
-    color: white;
+
+#block-gavias-kama-search {
+    float: right;
+    #edit-keys {
+        border-radius: 8px;
+        border-width: 1px;
+        border-color: #ccc;
+        min-width: 250px;
+        padding: 5px 30px 5px 8px;
+    }
+
+    #edit-submit {
+        background-color: $gcMainBlue;
+        color: transparent;
+        width: 20px;
+        border-radius: 50%;
+        height: 30px;
+
+        &:hover {
+            background-color: $ssolLightGreen;
+        }
+    }
+
+    #edit-actions {
+        font-family: FontAwesome !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        position: relative;
+        transform: translate(-35px, 1px);
+
+        &:after {
+            position: absolute;
+            color: white;
+            content: '\f002';
+            display: block;
+            top: 1px;
+            left: 7px;
+            font-size: 16px;
+            pointer-events: none;
+        }
+    }
 }
-.menu-hover .navigation .gva_menu .sub-menu {
-    border-top-color: $gcMainBlue;
-    border-top-width: 2px;
-    padding: 0;
+
+#block-gavias-kama-main-menu {
+    background-color: $mainGray;
+
+    ul.gva_menu {
+        >li.menu-item {
+            flex: auto;
+
+            a {
+                color: #575656;
+            }
+
+            &:hover {
+                background-color: $gcMainBlue;
+
+                >a {
+                    color: white !important;
+                }
+            }
+        }
+
+        .menu-item--active-trail {
+            background-color: $gcMainBlue;
+
+            >a {
+                color: white !important;
+            }
+        }
+
+        &.clearfix {
+            display: flex;
+            padding-right: 50px;
+        }
+
+        .sub-menu {
+            border-color: $gcMainBlue;
+            background-color: $mainGray;
+            padding: 0;
+
+            >li {
+                padding: 8px 15px;
+                margin-bottom: 0;
+
+                &:hover {
+                    background-color: $gcMainBlue;
+
+                    >a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 }
-.menu-hover .navigation .gva_menu .sub-menu > li > a:hover, .menu-hover .navigation .gva_menu .sub-menu > li > a:focus, .menu-hover .navigation .gva_menu .sub-menu > li > a:active {
-    color: initial;
-    background-color: #e8e8e8;
-}
-.menu-hover .navigation .gva_menu .sub-menu > li > a, header .menu-another .content-inner ul li a {
-    padding: 7px 10px !important;
-}
-.menu-hover .navigation .gva_menu .sub-menu > li {
-    padding: 0;
-    margin: 0;
-}
-header .menu-another .content-inner {
-    padding: 0;
-    border-color: $gcMainBlue;
-}
-header .menu-another .content-inner:after {
-    border-bottom-color: $gcMainBlue;
-}
-.menu-hover .navigation .gva_menu li.menu-item--active-trail > a {
-    color: $gcMainBlue !important;
+
+.main-menu {
+    .menu-another {
+        .content-inner {
+            border-color: $gcMainBlue;
+            padding: 0;
+            background-color: $mainGray;
+
+            &:after {
+                border-bottom-color: $gcMainBlue;
+            }
+
+            li.menu-item {
+                padding: 8px 15px;
+
+                &:hover {
+                    background-color: $gcMainBlue;
+
+                    >a {
+                        color: white !important;
+                    }
+                }
+
+                a {
+                    padding: 0 !important;
+                    color: #575656 !important;
+                }
+            }
+        }
+    }
 }

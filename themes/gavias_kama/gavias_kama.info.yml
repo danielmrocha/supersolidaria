@@ -13,6 +13,7 @@ regions:
   drupal_message: 'Message for drupal'
   offcanvas: 'After Offcanvas Mobile'
   topbar: 'Topbar'
+  topbar_right: 'Topbar Right'
   branding: 'Branding'
   search: 'Search'
   header_right: 'Header Right'

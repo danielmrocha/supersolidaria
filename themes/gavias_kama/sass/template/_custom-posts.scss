@@ -1,0 +1,104 @@
+.gsc-service-image-carousel {
+    margin-bottom: 20px;
+}
+
+.gsc-tab-views.style-1 {
+    .list-links-tabs {
+        background-color: #C1C5C9;
+        border-bottom: 0;
+
+        a {
+            color: white !important;
+        }
+
+        @media(min-width: $screen-md) {
+            .nav-tabs {
+                display: flex;
+
+                >li {
+                    flex: 1;
+                    text-align: center;
+                }
+
+                >li.active {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        width: 0;
+                        height: 0;
+                        border-top: 10px solid $ssolMainBlue;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                    }
+                }
+
+                >li.active a {
+                    background-color: $ssolMainBlue  !important;
+                }
+            }
+        }
+
+        .nav-tabs {
+            >li.active a {
+                background-color: $ssolMainBlue  !important;
+            }
+        }
+    }
+
+    .post-title {
+        a {
+            color: $ssolMainBlue;
+            font-weight: bold;
+        }
+    }
+}
+
+.sidebar {
+    .block {
+        border-color: $ssolLightGreen;
+
+        .block-title {
+            border-color: #162660;
+
+            span {
+                color: $ssolLightGreen;
+                font-weight: bold;
+                font-size: $font-size-h2;
+            }
+        }
+
+        .posts-list {
+            .post-block {
+
+                .post-content {
+                    position: relative;
+
+                    .post-title {
+                        padding-right: 65px;
+                        position: relative;
+                        z-index: 1;
+
+                        a {
+                            font-weight: bold;
+                        }
+                    }
+
+                    .post-body {
+                        display: block;
+                        margin-top: 22px;
+                    }
+
+                    .post-meta {
+                        position: absolute;
+                        right: 0;
+                        text-align: right;
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+    }
+}

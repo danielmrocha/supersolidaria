@@ -1,0 +1,75 @@
+.block {
+    .block-title {
+        span {
+            background-color: $ssolMainBlue;
+            font-weight: bold;
+        }
+    }
+}
+
+.js-view-dom-id-199cccdfd119250c0b6dee325b0d968c46e65768e9b66c5b13dc6689ddfbb330 {
+    .owl-carousel {
+        .owl-nav {
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            >div {
+                margin-top: -70px;
+                background-color: transparent !important;
+                box-shadow: none;
+            }
+
+            @media(min-width: $screen-md) {
+                .owl-prev {
+                    transform: translateX(-60px);
+                }
+                .owl-next{
+                    transform: translateX(55px);
+                }
+            }
+        }
+    }
+
+    .post-title {
+        a:hover {
+            color: $ssolMainBlue  !important;
+        }
+    }
+
+    [class^="gv-icon"],
+    [class*=" gv-icon"] {
+        font-family: FontAwesome !important;
+        display: inline-block;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+        font-size: 80px;
+        color: white;
+    }
+
+    .gv-icon-165:before {
+        content: "\f105";
+    }
+
+    .gv-icon-164:before {
+        content: "\f104";
+    }
+}
+
+.more-link a {
+    background-color: $ssolMainBlue;
+    padding: 5px 20px;
+    color: white !important;
+    border-radius: 8px;
+    float: right;
+    font-weight: bold;
+
+    &:hover{
+        background-color: $ssolLightGreen;
+    }
+}

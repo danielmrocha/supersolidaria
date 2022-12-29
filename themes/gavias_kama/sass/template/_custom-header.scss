@@ -26,12 +26,38 @@
 
 #block-gavias-kama-search {
     float: right;
+
+    form {
+        label {
+            position: relative !important;
+            overflow: initial;
+            color: transparent;
+            z-index: 1;
+
+            &:before {
+                content: 'Buscar...';
+                position: absolute;
+                color: #ccc;
+                top: 1px;
+                left: 15px;
+                width: 50px;
+                pointer-events: none;
+            }
+        }
+    }
+
     #edit-keys {
         border-radius: 8px;
         border-width: 1px;
         border-color: #ccc;
         min-width: 250px;
         padding: 5px 30px 5px 8px;
+        z-index: 0;
+        position: relative;
+
+        &:focus {
+            z-index: 1;
+        }
     }
 
     #edit-submit {
@@ -51,6 +77,7 @@
         -moz-osx-font-smoothing: grayscale !important;
         position: relative;
         transform: translate(-35px, 1px);
+        z-index: 2;
 
         &:after {
             position: absolute;

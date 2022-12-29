@@ -436,4 +436,36 @@
 
 });
 
+  /* ACCESIBILIDAD */
+  jQuery('#a_more').click(function(){ 
+    //console.log("Aumentando")   
+    curSize= parseInt(jQuery('html').css('font-size')) + 2;
+    if(curSize<=24)
+    jQuery('html').css('font-size', curSize);
+  });  
+
+  /*Disminuir tamaño de la fuente*/
+  jQuery('#a_less').click(function(){    
+    curSize= parseInt(jQuery('html').css('font-size')) - 2;
+    if(curSize>=14)
+    jQuery('html').css('font-size', curSize);
+  }); 
+
+  /*Reiniciar tamaño de la fuente*/
+  jQuery('#a_normal').click(function(){    
+    jQuery('html').css('font-size', 'initial');
+  }); 
+
+  /*Alto contraste*/
+  jQuery('#high_contrast').click(function(){
+    if(jQuery('html').hasClass('altoContraste')){
+      jQuery('html').removeClass('altoContraste');
+      jQuery(".navbar-default" ).removeClass( "navbar-inverse" );
+    }
+    else{
+      jQuery('html').addClass('altoContraste');
+      jQuery(".navbar-default" ).addClass( "navbar-inverse" );
+    }
+  });
+
 })(jQuery);

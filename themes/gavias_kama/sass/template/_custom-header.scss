@@ -111,6 +111,26 @@
                     color: white !important;
                 }
             }
+            
+            &:before {
+                content: '';
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                top: -120px;
+                display: none;
+                background: url(/themes/gavias_kama/images/ssol/bienvenido-lsc.gif), white;
+                background-size: contain;
+                background-repeat: no-repeat;
+                border: solid 10px #e3e3e3;
+            }
+
+            &:hover:before {
+                display: block;
+            }
+            // &:nth-child(3):before {
+            //     background-image: url(/themes/gavias_kama/logo.png);
+            // }
         }
 
         .menu-item--active-trail {

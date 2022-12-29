@@ -113,3 +113,132 @@
         }
     }
 }
+
+.entidades-block {
+    .column-content-inner {
+        @media(min-width: $screen-md) {
+            .column-content+.gsc-image {
+                text-align: center;
+
+                img {
+                    width: 75%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+.lista-entidades {
+    ul {
+        list-style-type: none;
+
+        li {
+            padding-left: 10px;
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                left: -5px;
+                top: 7px;
+            }
+
+            a {
+                text-decoration: underline;
+
+                &:hover {
+                    color: $ssolMainBlue;
+                }
+            }
+        }
+    }
+
+    >div {
+        &:nth-child(1) {
+            ul li:nth-child(1):before {
+                background-color: #990000;
+            }
+
+            ul li:nth-child(2):before {
+                background-color: #00630C;
+            }
+
+            ul li:nth-child(3):before {
+                background-color: #700E4E;
+            }
+        }
+
+        &:nth-child(2) {
+            ul li:nth-child(1):before {
+                background-color: #705B0E;
+            }
+
+            ul li:nth-child(2):before {
+                background-color: #E50404;
+            }
+
+            ul li:nth-child(3):before {
+                background-color: #240AA9;
+            }
+        }
+
+        &:nth-child(3) {
+            ul li:nth-child(1):before {
+                background-color: #151F99;
+            }
+
+            ul li:nth-child(2):before {
+                background-color: #410E99;
+            }
+
+            ul li:nth-child(3):before {
+                background-color: #5b8300;
+            }
+        }
+
+        &:nth-child(4) {
+            ul li:nth-child(1):before {
+                background-color: #3d6300;
+            }
+
+            ul li:nth-child(2):before {
+                background-color: #996200;
+            }
+
+            ul li:nth-child(3):before {
+                background-color: #0F3E99;
+            }
+        }
+
+        &:nth-child(5) {
+            ul li:nth-child(1):before {
+                background-color: #1d7373;
+            }
+
+            ul li:nth-child(2):before {
+                background-color: #531400;
+            }
+
+            ul li:nth-child(3):before {
+                background-color: #3c9900;
+            }
+        }
+
+        &:nth-child(6) {
+            ul li:nth-child(1):before {
+                background-color: #590a99;
+            }
+
+            ul li:nth-child(2):before {
+                background-color: #37160d;
+            }
+        }
+    }
+}
+
+.logo-presidencia {
+    margin-top: 15px;
+}

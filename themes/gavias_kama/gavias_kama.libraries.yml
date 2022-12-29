@@ -28,6 +28,7 @@ global-styling:
     vendor/magnific/jquery.magnific-popup.min.js: {}
     vendor/jquery.pjax.js: {}
     js/main.js: {}
+    js/global.js: {}
   dependencies:
     - core/jquery
     - core/drupal
@@ -36,7 +37,7 @@ global-styling:
 gavias_kama.gallery:
   version: VERSION
   css:
-    theme: 
+    theme:
       vendor/gallery/style.css: {}
   js:
     vendor/gallery/jquery.mobile.customized.min.js: {}
@@ -47,119 +48,119 @@ gavias_kama.gallery:
 gavias_kama.skin.default:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/template.css: {}
       css/bootstrap.css: {}
 
 gavias_kama.skin.blue:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/blue/template.css: {}
       css/skins/blue/bootstrap.css: {}
 
 gavias_kama.skin.blue2:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/blue2/template.css: {}
       css/skins/blue2/bootstrap.css: {}
 
 gavias_kama.skin.brown:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/brown/template.css: {}
       css/skins/brown/bootstrap.css: {}
 
 gavias_kama.skin.green:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/green/template.css: {}
       css/skins/green/bootstrap.css: {}
 
 gavias_kama.skin.lilac:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/lilac/template.css: {}
       css/skins/lilac/bootstrap.css: {}
 
 gavias_kama.skin.lime_green:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/lime_green/template.css: {}
       css/skins/lime_green/bootstrap.css: {}
 
 gavias_kama.skin.orange:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/orange/template.css: {}
       css/skins/orange/bootstrap.css: {}
 
 gavias_kama.skin.pink:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/pink/template.css: {}
       css/skins/pink/bootstrap.css: {}
 
 gavias_kama.skin.purple:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/purple/template.css: {}
       css/skins/purple/bootstrap.css: {}
 
 gavias_kama.skin.red:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/red/template.css: {}
       css/skins/red/bootstrap.css: {}
 
 gavias_kama.skin.turquoise:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/turquoise/template.css: {}
       css/skins/turquoise/bootstrap.css: {}
 
 gavias_kama.skin.turquoise2:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/turquoise2/template.css: {}
       css/skins/turquoise2/bootstrap.css: {}
 
 gavias_kama.skin.violet_red:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/violet_red/template.css: {}
       css/skins/violet_red/bootstrap.css: {}
 
 gavias_kama.skin.violet_red2:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/violet_red2/template.css: {}
       css/skins/violet_red2/bootstrap.css: {}
 
 gavias_kama.skin.yellow:
   version: VERSION
   css:
-    theme: 
+    theme:
       css/skins/yellow/template.css: {}
       css/skins/yellow/bootstrap.css: {}
 
 gavias_kama_admin:
   version: VERSION
-  css: 
-    theme: 
+  css:
+    theme:
       css/theme-settings.css: {}
       vendor/colorpicker/css/colorpicker.css: {}
       vendor/codemirror/lib/codemirror.css: {}

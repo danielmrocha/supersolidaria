@@ -68,6 +68,20 @@
     }
 }
 
+.return-top.default {
+    background: $ssolMainBlue;
+    right: 0;
+    border-radius: 8px;
+
+    &:hover{
+        background: $gcMainBlue;
+    }
+
+    i {
+        font-weight: bold;
+    }
+}
+
 @media(min-width: $screen-md) {
 
     .accesibilidad-items {

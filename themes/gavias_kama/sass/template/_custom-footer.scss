@@ -1,25 +1,32 @@
 .copyright {
     background-color: $gcMainBlue;
-    img{
+
+    img {
         max-height: 50px;
     }
-    .copyright-inner{
+
+    .copyright-inner {
         padding: 8px 0;
+
         .text-center {
             border-right: solid 1px white;
         }
     }
 }
+
 .footer-center {
     background-color: $gcMainGreen;
     color: #303030;
     padding: 0 !important;
-    a{
+
+    a {
         color: $gcMainBlue;
-        &:hover{
+
+        &:hover {
             color: $ssolMainGreen;
         }
     }
+
     >.container {
         background-color: white;
         padding: 30px;
@@ -38,7 +45,26 @@
 #block-footersocialnetwork a {
     font-weight: bold;
     font-size: 16px;
+
     i {
         padding-right: 10px;
+    }
+}
+
+.view-count {
+    text-align: center;
+    color: $gcMainBlue;
+    font-weight: bold;
+    padding-bottom: 80px;
+    position: relative;
+
+    &:before {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f06e";
+        font-size: 20px;
+        color: black;
+        top: 2px;
+        position: absolute;
+        margin-left: -30px;
     }
 }

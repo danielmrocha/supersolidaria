@@ -1,5 +1,6 @@
 .block {
     .block-title {
+        margin-top: 70px;
         span {
             font-size: $font-size-h2;
             background-color: $ssolMainBlue;
@@ -63,6 +64,7 @@
     }
 
     .title-shortcode {
+        margin-top: 20px;
         transform: translateY(-35px);
     }
 }

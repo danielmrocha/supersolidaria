@@ -239,6 +239,34 @@
     }
 }
 
+.tabs-social-networks{
+    ul.nav.nav-tabs {
+        margin-top: 45px;
+
+        li {
+            background-color: #E1E2E3;
+            border: solid 1px #d9d9d9;
+            border-radius: 5px 5px 0 0;
+            margin-right: 5px;
+            width: 100px;
+            text-align: left;
+
+            a {
+                color: #063078;
+                padding: 6px;
+                margin-right: 0px;
+                text-transform: capitalize;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            &.active, &.active a {
+                background-color: white !important;
+            }
+        }
+    }
+}
+
 .logo-presidencia {
     margin-top: 15px;
 }

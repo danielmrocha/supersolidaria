@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Name":"Nombre"}},"pluralFormula":{"1":0,"default":1}};

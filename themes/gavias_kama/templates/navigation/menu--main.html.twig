@@ -18,7 +18,6 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
-
 <div class="gva-navigation">
 {% import _self as menus %}
 
@@ -40,9 +39,9 @@
       {% set class_mega_menu = '' %}
       {% set class_columns = '' %}
       {% if item.attributes.gva_layout == 'menu-block' and menu_level == 0 %}
-        {% set class_mega_menu = 'gva-mega-menu mega-menu-block' %} 
-      {% elseif item.attributes.gva_layout == 'menu-grid' and menu_level == 0 %}   
-        {% set class_mega_menu = 'gva-mega-menu megamenu menu-grid' %} 
+        {% set class_mega_menu = 'gva-mega-menu mega-menu-block' %}
+      {% elseif item.attributes.gva_layout == 'menu-grid' and menu_level == 0 %}
+        {% set class_mega_menu = 'gva-mega-menu megamenu menu-grid' %}
         {% set class_columns = ['menu-columns-', item.attributes.gva_layout_columns]|join('') %}
       {% endif %}
       {%
@@ -57,20 +56,20 @@
         ]
       %}
       <li {{ item.attributes.addClass(classes)|without('gva_icon', 'gva_class', 'gva_layout_columns', 'gva_block', 'gva_layout') }}>
-        <a href="{{ item.url }}">
+        <a target="{{ (item.title == 'PQRS' ? '_blank') ~ (item.title|raw =='Trámites y Servicios' ? '_blank')}}" href="{{ item.url }}">
           {% if item.attributes.gva_icon != '' %}
             <i class="fa {{ item.attributes.gva_icon }}"></i>
           {% endif %}
           {{ item.title }}
           {% if item.below or item.attributes.gva_layout == 'menu-block' and menu_level == 0 %}
             <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>
-          {% endif %}  
+          {% endif %}
         </a>
         {% if item.attributes.gva_layout == 'menu-block' and menu_level == 0 %}
           <div class="sub-menu">
             {{ item.gva_block_content }}
           </div>
-        {% endif %}  
+        {% endif %}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}

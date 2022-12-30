@@ -3,6 +3,9 @@
 
     a {
         color: white;
+        &.is-active{
+            color: $ssolLightGreen;
+        }
     }
 
     .block-language {
